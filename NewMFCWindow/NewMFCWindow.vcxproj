@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3FF3B608-ED5E-48D6-B942-B4022542BB09}</ProjectGuid>
+    <RootNamespace>NewMFCWindow</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="AngleBullet.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="BaseGameLoop.cpp" />
+    <ClCompile Include="Buff.cpp" />
+    <ClCompile Include="BuffManager.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletManager.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Crash.cpp" />
+    <ClCompile Include="EnemyManager.cpp" />
+    <ClCompile Include="EnemyPlane.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="IGameLoop.cpp" />
+    <ClCompile Include="Iku.cpp" />
+    <ClCompile Include="IkuBullet.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="InputSignal.cpp" />
+    <ClCompile Include="LevelUpEffect.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Math.cpp" />
+    <ClCompile Include="MFCApplication.cpp" />
+    <ClCompile Include="MFCWindow.cpp" />
+    <ClCompile Include="MusicManager.cpp" />
+    <ClCompile Include="NormalBullet.cpp" />
+    <ClCompile Include="PlayerAngleBullet.cpp" />
+    <ClCompile Include="PowerBuff.cpp" />
+    <ClCompile Include="RandomLineBullet.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="Remilia.cpp" />
+    <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="Shooter.cpp" />
+    <ClCompile Include="SlowedBullet.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="AngleBullet.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="BaseGameLoop.h" />
+    <ClInclude Include="Buff.h" />
+    <ClInclude Include="BuffManager.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletManager.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Crash.h" />
+    <ClInclude Include="EnemyManager.h" />
+    <ClInclude Include="EnemyPlane.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="IGameLoop.h" />
+    <ClInclude Include="Iku.h" />
+    <ClInclude Include="IkuBullet.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputSignal.h" />
+    <ClInclude Include="LevelUpEffect.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="MFCApplication.h" />
+    <ClInclude Include="MFCWindow.h" />
+    <ClInclude Include="MusicManager.h" />
+    <ClInclude Include="NormalBullet.h" />
+    <ClInclude Include="PlayerAngleBullet.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="PowerBuff.h" />
+    <ClInclude Include="RandomLineBullet.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="Remilia.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="Shooter.h" />
+    <ClInclude Include="SlowedBullet.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\back.bmp" />
+    <Image Include="res\bg\yuki_0.bmp" />
+    <Image Include="res\bg\yuki_1.bmp" />
+    <Image Include="res\bg\yuki_10.bmp" />
+    <Image Include="res\bg\yuki_11.bmp" />
+    <Image Include="res\bg\yuki_12.bmp" />
+    <Image Include="res\bg\yuki_13.bmp" />
+    <Image Include="res\bg\yuki_14.bmp" />
+    <Image Include="res\bg\yuki_15.bmp" />
+    <Image Include="res\bg\yuki_16.bmp" />
+    <Image Include="res\bg\yuki_17.bmp" />
+    <Image Include="res\bg\yuki_18.bmp" />
+    <Image Include="res\bg\yuki_19.bmp" />
+    <Image Include="res\bg\yuki_2.bmp" />
+    <Image Include="res\bg\yuki_20.bmp" />
+    <Image Include="res\bg\yuki_21.bmp" />
+    <Image Include="res\bg\yuki_22.bmp" />
+    <Image Include="res\bg\yuki_23.bmp" />
+    <Image Include="res\bg\yuki_24.bmp" />
+    <Image Include="res\bg\yuki_25.bmp" />
+    <Image Include="res\bg\yuki_26.bmp" />
+    <Image Include="res\bg\yuki_27.bmp" />
+    <Image Include="res\bg\yuki_28.bmp" />
+    <Image Include="res\bg\yuki_29.bmp" />
+    <Image Include="res\bg\yuki_3.bmp" />
+    <Image Include="res\bg\yuki_30.bmp" />
+    <Image Include="res\bg\yuki_4.bmp" />
+    <Image Include="res\bg\yuki_5.bmp" />
+    <Image Include="res\bg\yuki_6.bmp" />
+    <Image Include="res\bg\yuki_7.bmp" />
+    <Image Include="res\bg\yuki_8.bmp" />
+    <Image Include="res\bg\yuki_9.bmp" />
+    <Image Include="res\bg_attr.bmp" />
+    <Image Include="res\boss_hp.bmp" />
+    <Image Include="res\buff\exp_buff.bmp" />
+    <Image Include="res\bullet\bullet_0.bmp" />
+    <Image Include="res\bullet\bullet_1.bmp" />
+    <Image Include="res\bullet\bullet_2.bmp" />
+    <Image Include="res\bullet\bullet_4.bmp" />
+    <Image Include="res\bullet\bullet_5.bmp" />
+    <Image Include="res\bullet\bullet_iku_0.bmp" />
+    <Image Include="res\crash\crash_0.bmp" />
+    <Image Include="res\crash\crash_1.bmp" />
+    <Image Include="res\crash\crash_2.bmp" />
+    <Image Include="res\crash\crash_3.bmp" />
+    <Image Include="res\crash\crash_4.bmp" />
+    <Image Include="res\crash\crash_5.bmp" />
+    <Image Include="res\crash\crash_6.bmp" />
+    <Image Include="res\crash\crash_7.bmp" />
+    <Image Include="res\crash\crash_8.bmp" />
+    <Image Include="res\crash\crash_9.bmp" />
+    <Image Include="res\effect\level_up_2.bmp" />
+    <Image Include="res\effect\level_up_3.bmp" />
+    <Image Include="res\effect\level_up_max.bmp" />
+    <Image Include="res\enemy\iku_enemy_0.bmp" />
+    <Image Include="res\enemy\iku_enemy_1.bmp" />
+    <Image Include="res\enemy\iku_enemy_2.bmp" />
+    <Image Include="res\enemy\iku_enemy_3.bmp" />
+    <Image Include="res\enemy\iku_enemy_4.bmp" />
+    <Image Include="res\enemy\iku_enemy_5.bmp" />
+    <Image Include="res\enemy\iku_enemy_6.bmp" />
+    <Image Include="res\enemy\iku_enemy_7.bmp" />
+    <Image Include="res\enemy\iku_enemy_8.bmp" />
+    <Image Include="res\enemy\remilia_0.bmp" />
+    <Image Include="res\enemy\remilia_1.bmp" />
+    <Image Include="res\enemy\remilia_2.bmp" />
+    <Image Include="res\enemy\remilia_3.bmp" />
+    <Image Include="res\enemy\remilia_4.bmp" />
+    <Image Include="res\enemy\remilia_5.bmp" />
+    <Image Include="res\enemy\remilia_6.bmp" />
+    <Image Include="res\enemy\remilia_7.bmp" />
+    <Image Include="res\hero_l.bmp" />
+    <Image Include="res\hero_m_0.bmp" />
+    <Image Include="res\hero_m_1.bmp" />
+    <Image Include="res\hero_m_2.bmp" />
+    <Image Include="res\hero_m_3.bmp" />
+    <Image Include="res\hero_r.bmp" />
+    <Image Include="res\level.bmp" />
+    <Image Include="res\life.bmp" />
+    <Image Include="res\life_star.bmp" />
+    <Image Include="res\num.bmp" />
+    <Image Include="res\skill.bmp" />
+    <Image Include="res\skill\c1_skill_0.bmp" />
+    <Image Include="res\skill\c1_skill_1.bmp" />
+    <Image Include="res\skill\c1_skill_2.bmp" />
+    <Image Include="res\skill\c1_skill_3.bmp" />
+    <Image Include="res\skill\c1_skill_4.bmp" />
+    <Image Include="res\skill_star.bmp" />
+    <Image Include="res\start_game.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NewMFCWindow.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

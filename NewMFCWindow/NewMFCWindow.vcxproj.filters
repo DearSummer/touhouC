@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{faca44d6-fac9-4c19-885f-06f0c38a8aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{daa94eca-3437-406c-932b-85107e7ae742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bullet">
+      <UniqueIdentifier>{8b7ffd85-cd6d-4c9e-8358-73efc1e1aa8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bg">
+      <UniqueIdentifier>{561f76f7-3fb8-4e6a-bb69-09599d0c85bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\enemy">
+      <UniqueIdentifier>{ccaa7128-ceff-4ee8-9ee0-9672e351a3db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bullet">
+      <UniqueIdentifier>{5ba705a6-b43d-4264-b1ae-c593889a0ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bullet">
+      <UniqueIdentifier>{6d336489-1b6f-4211-b3bb-f67aac3bc1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\actor">
+      <UniqueIdentifier>{c3f6a429-ad5c-481d-957c-fb72f2588ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\actor">
+      <UniqueIdentifier>{28a44a7d-bfb4-4a7e-b2f3-e155cbc0591e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\buff">
+      <UniqueIdentifier>{fa31e4d2-c7dc-4fac-bb72-9684c1fb124f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\buff">
+      <UniqueIdentifier>{801a76f9-1594-48d9-8fbf-d2e51d4f74c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\crash">
+      <UniqueIdentifier>{081aeb8e-e93b-405c-8834-7136e5bfc716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\effect">
+      <UniqueIdentifier>{7e7993ca-b45a-444e-a7a9-8bbd7bf9b733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\skill">
+      <UniqueIdentifier>{cdbba1fb-3ac4-42a1-91c9-4174647db2de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Time.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCApplication.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCWindow.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="IGameLoop.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseGameLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shooter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="IkuBullet.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalBullet.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Source Files\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyPlane.cpp">
+      <Filter>Source Files\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Iku.cpp">
+      <Filter>Source Files\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Buff.cpp">
+      <Filter>Source Files\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="Crash.cpp">
+      <Filter>Source Files\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerBuff.cpp">
+      <Filter>Source Files\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomLineBullet.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Remilia.cpp">
+      <Filter>Source Files\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="AngleBullet.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="SlowedBullet.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerAngleBullet.cpp">
+      <Filter>Source Files\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelUpEffect.cpp">
+      <Filter>Source Files\buff</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCApplication.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCWindow.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameLoop.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSignal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseGameLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shooter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Header Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalBullet.h">
+      <Filter>Header Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="IkuBullet.h">
+      <Filter>Header Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Header Files\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyPlane.h">
+      <Filter>Header Files\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Iku.h">
+      <Filter>Header Files\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Buff.h">
+      <Filter>Header Files\buff</Filter>
+    </ClInclude>
+    <ClInclude Include="Crash.h">
+      <Filter>Header Files\buff</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerBuff.h">
+      <Filter>Header Files\buff</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomLineBullet.h">
+      <Filter>Header Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Remilia.h">
+      <Filter>Header Files\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="AngleBullet.h">
+      <Filter>Header Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowedBullet.h">
+      <Filter>Header Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerAngleBullet.h">
+      <Filter>Header Files\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelUpEffect.h">
+      <Filter>Header Files\buff</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bullet\bullet_0.bmp">
+      <Filter>Resource Files\bullet</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_0.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_1.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_2.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_3.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_4.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_5.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_6.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_7.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_8.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_9.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_10.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_11.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_12.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_13.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_14.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_15.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_16.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_17.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_18.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_19.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_20.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_21.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_22.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_23.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_24.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_25.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_26.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_27.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_28.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_29.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\bg\yuki_30.bmp">
+      <Filter>Resource Files\bg</Filter>
+    </Image>
+    <Image Include="res\hero_l.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hero_m_0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hero_m_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hero_m_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hero_m_3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hero_r.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_0.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_1.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_2.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_3.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_4.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_5.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_6.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_7.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\iku_enemy_8.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\crash\crash_0.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_1.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_2.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_3.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_4.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_5.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_6.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_7.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_8.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\crash\crash_9.bmp">
+      <Filter>Resource Files\crash</Filter>
+    </Image>
+    <Image Include="res\enemy\remilia_0.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\remilia_1.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\remilia_2.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\remilia_3.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\remilia_4.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\remilia_5.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\remilia_6.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\enemy\remilia_7.bmp">
+      <Filter>Resource Files\enemy</Filter>
+    </Image>
+    <Image Include="res\bullet\bullet_1.bmp">
+      <Filter>Resource Files\bullet</Filter>
+    </Image>
+    <Image Include="res\bullet\bullet_2.bmp">
+      <Filter>Resource Files\bullet</Filter>
+    </Image>
+    <Image Include="res\bullet\bullet_iku_0.bmp">
+      <Filter>Resource Files\bullet</Filter>
+    </Image>
+    <Image Include="res\bullet\bullet_4.bmp">
+      <Filter>Resource Files\bullet</Filter>
+    </Image>
+    <Image Include="res\bg_attr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\life.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\life_star.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\skill.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\skill_star.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\num.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\boss_hp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bullet\bullet_5.bmp">
+      <Filter>Resource Files\bullet</Filter>
+    </Image>
+    <Image Include="res\buff\exp_buff.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\effect\level_up_2.bmp">
+      <Filter>Resource Files\effect</Filter>
+    </Image>
+    <Image Include="res\level.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\effect\level_up_3.bmp">
+      <Filter>Resource Files\effect</Filter>
+    </Image>
+    <Image Include="res\effect\level_up_max.bmp">
+      <Filter>Resource Files\effect</Filter>
+    </Image>
+    <Image Include="res\skill\c1_skill_0.bmp">
+      <Filter>Resource Files\skill</Filter>
+    </Image>
+    <Image Include="res\skill\c1_skill_1.bmp">
+      <Filter>Resource Files\skill</Filter>
+    </Image>
+    <Image Include="res\skill\c1_skill_2.bmp">
+      <Filter>Resource Files\skill</Filter>
+    </Image>
+    <Image Include="res\skill\c1_skill_3.bmp">
+      <Filter>Resource Files\skill</Filter>
+    </Image>
+    <Image Include="res\skill\c1_skill_4.bmp">
+      <Filter>Resource Files\skill</Filter>
+    </Image>
+    <Image Include="res\back.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\start_game.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NewMFCWindow.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>
