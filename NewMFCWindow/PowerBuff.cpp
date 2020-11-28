@@ -8,7 +8,7 @@ PowerBuff::PowerBuff(const std::string path, int x, int y)
 {
 	playerBuffType = ADD_DAMAGE;
 	buffType = BUFF_TYPE_COLLIDER_ON;
-	buffState = DISPLAY;
+	buffState = State::DISPLAY;
 }
 
 PowerBuff::PowerBuff()
@@ -22,7 +22,7 @@ void PowerBuff::draw(CDC * dc, CDC * canvasDC)
 	pos.y += (-3 + timer > 5 ? timer : 5) ;
 	timer += Time.detlaTime / 1000;
 	if (pos.y < 0)
-		buffState = DIE_OUT_OF_RANGE;
+		buffState = State::DIE_OUT_OF_RANGE;
 
 	DRAW_IMG(dc, canvasDC, sprite, pos.x, pos.y);
 }

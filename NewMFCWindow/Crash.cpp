@@ -17,7 +17,7 @@ Crash::~Crash()
 void Crash::draw(CDC * dc, CDC * canvasDC)
 {
 	if (anim->isTheLastFrame())
-		buffState = DIE_OUT_OF_RANGE;
+		buffState = State::DIE_OUT_OF_RANGE;
 
 	anim->drawImg(dc, canvasDC, static_cast<int>(pos.x), static_cast<int>(pos.y), 35.0f);
 }

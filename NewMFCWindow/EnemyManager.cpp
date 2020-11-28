@@ -58,15 +58,15 @@ void EnemyManager::drawEnemy(CDC * dc, CDC * canvasDC)
 				Math::lerp(bossHp->getRect().width, static_cast<float>(enemyList[i]->getHp()) / enemyList[i]->getMaxHp() * 390, 0.1f));
 		}
 
-		if (enemyList[i]->getState() == DISPLAY)
+		if (enemyList[i]->getState() == State::DISPLAY)
 		{
 			enemyList[i]->update(dc, canvasDC);
 		}
-		else if (enemyList[i]->getState() == DIE_OUT_OF_RANGE)
+		else if (enemyList[i]->getState() == State::DIE_OUT_OF_RANGE)
 		{
 			removeEnemy(i);
 		}
-		else if(enemyList[i]->getState() == DIE_BY_SHOOT)
+		else if(enemyList[i]->getState() == State::DIE_BY_SHOOT)
 		{
 			if (enemyList[i]->isBoss)
 			{
@@ -196,7 +196,7 @@ void EnemyManager::destoryAllEnemy()
 		if(enemyList[i]->isBoss)
 			continue;
 
-		enemyList[i]->setState(DIE_BY_SHOOT);
+		enemyList[i]->setState(State::DIE_BY_SHOOT);
 	}
 }
 

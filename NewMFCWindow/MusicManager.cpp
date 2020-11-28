@@ -3,6 +3,7 @@
 #include <windows.h>
 #include <mmsystem.h>
 #include <tchar.h>
+#include <thread>
 
 #pragma comment(lib,"WINMM.LIB")
 
@@ -29,9 +30,14 @@ void MusicManager::playBackGroundMusic(const std::string& path) const
 	char buffer[256];
 	sprintf_s(buffer, "open \"%s\" type sequencer alias MUSIC", path.c_str());
 
-	mciSendString("close all", nullptr, 0, nullptr);
-	mciSendString(buffer, nullptr, 0, nullptr);
-	mciSendString("play MUSIC from 0 notify", nullptr, 0, lmciMidiHWnd);
+	auto playMusicThread = std::thread([=]()
+		{
+			mciSendString("close all", nullptr, 0, nullptr);
+			mciSendString(buffer, nullptr, 0, nullptr);
+			mciSendString("play MUSIC from 0 notify", nullptr, 0, MusicManager::getInstance().lmciMidiHWnd);
+		});
+
+	playMusicThread.detach();
 
 }
 

@@ -190,7 +190,7 @@ void GameManager::checkPlayerBulletToEnemy()
 			if (!enemyPlaneList[j])
 				continue;
 
-			if (bt == BULLET_TYPE_CIRCLE)
+			if (bt == BulletType::BULLET_TYPE_CIRCLE)
 			{
 				if (circleToSquareCollider(Circle(collider.x + collider.width / 2, collider.y + collider.height / 2, static_cast<float>(collider.width) / 2),
 					enemyPlaneList[j]->getCollider()))
@@ -199,7 +199,7 @@ void GameManager::checkPlayerBulletToEnemy()
 				}
 			}
 
-			if (bt == BULLET_TYPE_RECT)
+			if (bt == BulletType::BULLET_TYPE_RECT)
 			{
 				if (squareToSquareCollider(collider, enemyPlaneList[j]->getCollider()))
 				{
@@ -224,7 +224,7 @@ void GameManager::checkEnemyBulletToPlayer()
 		const Rect collider = enemyBulletList[i]->getCollider();
 		const BulletType bt = enemyBulletList[i]->getBulletType();
 
-		if(bt == BULLET_TYPE_CIRCLE)
+		if(bt == BulletType::BULLET_TYPE_CIRCLE)
 		{
 			if( circleToSquareCollider(Circle(collider.x + collider.width / 2,collider.y + collider.height / 2,static_cast<float>(collider.width) / 2),
 				player->getCollider()))
@@ -234,7 +234,7 @@ void GameManager::checkEnemyBulletToPlayer()
 			}
 		}
 
-		if(bt == BULLET_TYPE_RECT)
+		if(bt == BulletType::BULLET_TYPE_RECT)
 		{
 			if(squareToSquareCollider(collider,player->getCollider()))
 			{
@@ -300,7 +300,7 @@ bool GameManager::circleToSquareCollider(Circle circle, Rect rect) const
 		closePoint.y = circle.y;
 	}
 
-	const float distance = sqrt(pow(closePoint.x - circle.x, 2) + pow(closePoint.y - circle.y, 2));
+	const float distance = sqrtf(powf(closePoint.x -(float) circle.x, 2.f) + powf(closePoint.y - (float)circle.y, 2.f));
 
 	return distance <= circle.r;
 }

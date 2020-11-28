@@ -28,9 +28,9 @@ IkuBullet::~IkuBullet()
 void IkuBullet::draw(CDC * dc, CDC * canvasDC)
 {
 	if (bulletPos.x < 0 || bulletPos.y < 0 || bulletPos.x > 390 || bulletPos.y > 560)
-		state = DIE_OUT_OF_RANGE;
+		state = State::DIE_OUT_OF_RANGE;
 	else
-		state = DISPLAY;
+		state = State::DISPLAY;
 
 	bulletPos.y += speed;
 	bulletPos.x += offset;
@@ -56,5 +56,5 @@ Bullet * IkuBullet::clone()
 
 BulletType IkuBullet::getBulletType()
 {
-	return BULLET_TYPE_CIRCLE;
+	return BulletType::BULLET_TYPE_CIRCLE;
 }

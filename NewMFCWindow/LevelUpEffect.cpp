@@ -7,7 +7,7 @@ LevelUpEffect::LevelUpEffect(const std::string& path, int x, int y) :
 	Buff(path, x, y, 1), timer(0),delayTime(1000)
 {
 	buffType = BUFF_TYPE_COLLIDER_OFF;
-	buffState = DISPLAY;
+	buffState = State::DISPLAY;
 }
 
 LevelUpEffect::LevelUpEffect():timer(0),delayTime(1000)
@@ -21,7 +21,7 @@ void LevelUpEffect::draw(CDC* dc, CDC* canvasDC)
 {
 	pos.y -= 1;
 	if (timer > delayTime)
-		buffState = DIE_OUT_OF_RANGE;
+		buffState = State::DIE_OUT_OF_RANGE;
 
 	timer += Time.detlaTime;
 	DRAW_IMG(dc, canvasDC, sprite, pos.x, pos.y);

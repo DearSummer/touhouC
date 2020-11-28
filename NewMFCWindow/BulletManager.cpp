@@ -53,7 +53,7 @@ void BulletManager::destoryAllBullet()
 		if(!enemyBulletList[i])
 			continue;
 
-		enemyBulletList[i]->setState(DIE_OUT_OF_RANGE);
+		enemyBulletList[i]->setState(State::DIE_OUT_OF_RANGE);
 	}
 }
 
@@ -106,11 +106,11 @@ void BulletManager::drawPlayerBullet(CDC * dc, CDC * canvasDC)
 		if (!playerBulletList[i])
 			continue;
 
-		if (playerBulletList[i]->getState() == DISPLAY)
+		if (playerBulletList[i]->getState() == State::DISPLAY)
 		{
 			playerBulletList[i]->draw(dc, canvasDC);
 		}
-		else if (playerBulletList[i]->getState() == DIE_OUT_OF_RANGE)
+		else if (playerBulletList[i]->getState() == State::DIE_OUT_OF_RANGE)
 		{
 			delete playerBulletList[i];
 			playerBulletList[i] = nullptr;
@@ -125,11 +125,11 @@ void BulletManager::drawEnemyBullet(CDC * dc, CDC * canvasDC)
 		if(!enemyBulletList[i])
 			continue;
 
-		if(enemyBulletList[i]->getState() == DISPLAY)
+		if(enemyBulletList[i]->getState() == State::DISPLAY)
 		{
 			enemyBulletList[i]->draw(dc, canvasDC);
 		}
-		else if(enemyBulletList[i]->getState() == DIE_OUT_OF_RANGE)
+		else if(enemyBulletList[i]->getState() == State::DIE_OUT_OF_RANGE)
 		{
 			delete enemyBulletList[i];
 			enemyBulletList[i] = nullptr;

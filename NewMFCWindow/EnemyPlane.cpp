@@ -21,10 +21,10 @@ EnemyPlane::~EnemyPlane()
 State EnemyPlane::getState() const
 {
 	if (isDead())
-		return DIE_BY_SHOOT;
+		return State::DIE_BY_SHOOT;
 
 	if (actorPos.x < 0 || actorPos.x > 390 || actorPos.y < 0 || actorPos.y > 560)
-		return DIE_OUT_OF_RANGE;
+		return State::DIE_OUT_OF_RANGE;
 
 	return state;
 }

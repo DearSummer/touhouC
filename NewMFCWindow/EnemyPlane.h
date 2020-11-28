@@ -24,7 +24,7 @@ protected:
 
 	Stage stage = E_STAGE_1;
 
-	State state = DISPLAY;
+	State state = State::DISPLAY;
 
 public:
 	EnemyPlane();

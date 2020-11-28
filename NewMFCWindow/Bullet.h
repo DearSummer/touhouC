@@ -4,14 +4,14 @@
 
 #define BULLET_NEVER_DIE_WITH_TIME -1
 
-enum State
+enum class State
 {
 	DISPLAY,
 	DIE_OUT_OF_RANGE,
 	DIE_BY_SHOOT
 };
 
-enum BulletType
+enum class BulletType
 {
 	BULLET_TYPE_RECT,
 	BULLET_TYPE_CIRCLE
@@ -28,7 +28,7 @@ protected:
 
 	int damage;
 
-	State state = DISPLAY;
+	State state = State::DISPLAY;
 	
 public:
 	explicit Bullet(const std::string& path,int width,int height,float aliveTime);

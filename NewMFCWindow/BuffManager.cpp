@@ -9,11 +9,11 @@ void BuffManager::drawBuff(CDC * dc, CDC * canvasDC)
 		if(!buffList[i])
 			continue;
 
-		if(buffList[i]->getState() == DISPLAY)
+		if(buffList[i]->getState() == State::DISPLAY)
 		{
 			buffList[i]->draw(dc, canvasDC);
 		}
-		else if(buffList[i]->getState() == DIE_OUT_OF_RANGE)
+		else if(buffList[i]->getState() == State::DIE_OUT_OF_RANGE)
 		{
 			removeBuff(i);
 		}

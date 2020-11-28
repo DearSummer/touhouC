@@ -22,12 +22,12 @@ void SlowedBullet::draw(CDC * dc, CDC * canvasDC)
 {
 
 	if (bulletPos.x < 0 || bulletPos.y < 0 || bulletPos.x > 390 || bulletPos.y > 560)
-		state = DIE_OUT_OF_RANGE;
+		state = State::DIE_OUT_OF_RANGE;
 	else
-		state = DISPLAY;
+		state = State::DISPLAY;
 
-	bulletPos.y += cos(angle / PI) * speed * (1 - timer / aliveTime);
-	bulletPos.x += sin(angle / PI) * speed * (1 - timer / aliveTime);
+	bulletPos.y += cosf(angle / PI) * speed * (1.f - timer / aliveTime);
+	bulletPos.x += sinf(angle / PI) * speed * (1.f - timer / aliveTime);
 
 	if (isDead())
 		return;
@@ -53,7 +53,7 @@ Bullet * SlowedBullet::clone()
 
 BulletType SlowedBullet::getBulletType()
 {
-	return BULLET_TYPE_CIRCLE;
+	return BulletType::BULLET_TYPE_CIRCLE;
 }
 
 void SlowedBullet::setAngle(float angle)

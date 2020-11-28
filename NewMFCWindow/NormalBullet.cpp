@@ -21,9 +21,9 @@ NormalBullet::~NormalBullet()
 void NormalBullet::draw(CDC * dc, CDC * canvasDC)
 {
 	if (bulletPos.x < 0 || bulletPos.y < 0 || bulletPos.x > 390 || bulletPos.y > 560)
-		state = DIE_OUT_OF_RANGE;
+		state = State::DIE_OUT_OF_RANGE;
 	else
-		state = DISPLAY;
+		state = State::DISPLAY;
 
 	bulletPos.y -= speed;
 	
@@ -52,5 +52,5 @@ Bullet * NormalBullet::clone()
 
 BulletType NormalBullet::getBulletType()
 {
-	return BULLET_TYPE_CIRCLE;
+	return BulletType::BULLET_TYPE_CIRCLE;
 }

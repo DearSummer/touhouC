@@ -27,9 +27,9 @@ void RandomLineBullet::draw(CDC * dc, CDC * canvasDC)
 {
 
 	if (bulletPos.x < 0 || bulletPos.y < 0 || bulletPos.x > 390 || bulletPos.y > 560)
-		state = DIE_OUT_OF_RANGE;
+		state = State::DIE_OUT_OF_RANGE;
 	else
-		state = DISPLAY;
+		state = State::DISPLAY;
 
 	bulletPos.y += cos(angle / PI) * speed;
 	bulletPos.x += sin(angle / PI) * speed;
@@ -48,7 +48,7 @@ Bullet * RandomLineBullet::clone()
 	b->bulletPos = bulletPos;
 	b->aliveTime = aliveTime;
 	b->speed = speed;
-	b->state = DISPLAY;
+	b->state = State::DISPLAY;
 	b->damage = damage;
 	b->angle = randomAngle();
 	return b;
@@ -58,5 +58,5 @@ Bullet * RandomLineBullet::clone()
 
 BulletType RandomLineBullet::getBulletType()
 {
-	return BULLET_TYPE_CIRCLE;
+	return BulletType::BULLET_TYPE_CIRCLE;
 }

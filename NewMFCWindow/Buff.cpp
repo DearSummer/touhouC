@@ -5,7 +5,7 @@
 
 
 Buff::Buff(const std::string & path, int x, int y, int count)
-	:width(x / 2), height(y), buffState(DISPLAY), playerBuffType(NONE)
+	:width(x / 2), height(y), buffState(State::DISPLAY), playerBuffType(NONE)
 {
 	if (count == 1)
 		sprite = new Sprite(path, x, y);
